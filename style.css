@@ -335,6 +335,10 @@ a {
 
   /* MAIN */
 
+  .main {
+    margin: 0px;
+  }
+
   .main__titulo h1{
     font-weight: bold;
     font-size: 25px;
@@ -376,5 +380,7 @@ a {
 
   /* FOOTER */
 
+  .footer {
 
+  }
 }

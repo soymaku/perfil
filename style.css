@@ -107,10 +107,6 @@ a {
   margin-bottom: 10px;
 }
 
-.main section {
-  margin: 30px 0;
-}
-
 /* ¿Quien soy? Estilos */
 
 .main__quienSoy {
@@ -246,4 +242,139 @@ a {
 .footer__info {
   text-align: center;
   width: 370px;
+}
+/* MEDIA QUERY 1200PX */
+
+@media (max-width: 1200px){
+  body {
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(212,212,212,1) 70%, rgba(179,179,179,1) 100%);
+    grid-template-areas: 
+    "header header"
+    "main   main"
+    "footer footer";
+  }
+
+  /* HEADER */
+
+  .header__content {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .perfil {
+    margin-bottom: 20px;
+  }
+
+  /* MAIN */
+
+  .quienSoy__content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .certificados {
+    flex-direction: column;
+    margin: 40px 0 0 0;
+  }
+}
+
+@media (max-width: 768px){
+  /*  HEADER  */
+  .header {
+    margin: 10px 0;
+  }
+
+  .header__content {
+    margin: 5px 0;
+  }
+
+  .nav ul li a{
+    font-weight: normal;
+    font-size: 18px;
+  }
+
+  /* MAIN */
+
+  .contactos {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  /* FOOTER */
+
+  .footer {
+    flex-direction: column;
+    height:10rem;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 480px){
+
+  /* HEADER */
+  .header {
+    padding: 0;
+  }
+
+  .header__content {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .perfil {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* MAIN */
+
+  .main__titulo h1{
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  .main__quienSoy {
+    margin-top: 30px;
+  }
+
+  .main__lenguajes {
+    margin: 0;
+  }
+
+  .quienSoy__imagen {
+    width: 370px;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  .quienSoy__desc {
+    width: 370px;
+  }
+
+  .certificado__img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .main__lenguajes h2 {
+    text-align: center;
+  }
+
+  .contactos__img {
+    width: 70px;
+    height: 70px;
+
+  }
+
+  /* FOOTER */
+
+
 }
